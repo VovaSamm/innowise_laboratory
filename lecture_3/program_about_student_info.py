@@ -24,7 +24,10 @@ class Student_list:
             if isinstance(number, str) and number == 'stop':
                 return 'stop'
             try:
-                return int(number)
+                if 0<=int(number)<=100:
+                    return int(number)
+                else:
+                    number = int(input('Enter number between 0 and 100 please '))
             except ValueError:
                 number = input('Enter number please ')
 
