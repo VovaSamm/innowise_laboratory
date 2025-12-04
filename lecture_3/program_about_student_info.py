@@ -31,6 +31,7 @@ class Student_list:
             except ValueError:
                 number = input('Enter number please ')
 
+
     @classmethod
     def check_of_two_words(self, string: str):
         ''' This program check true is string (two words) or not (for name of students)'''
